@@ -30,3 +30,16 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+
+
+
+def empty_date():
+  todays_date = calendar.datetime.date.today()
+  print(todays_date)
+
+# def month_only(m, y):
+
+
+date = input('Enter a Month and Year: ')
+print(empty_date())
