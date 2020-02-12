@@ -52,7 +52,9 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 def f4(**kwargs):
-    print(kwargs)
+    
+    for key in kwargs:
+        print(f'key: {key}, values: {kwargs[key]}')
      
 # Should print
 # key: a, value: 12
