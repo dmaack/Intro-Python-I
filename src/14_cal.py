@@ -32,14 +32,12 @@ import calendar
 from datetime import datetime
 
 
-
-
-def empty_date():
-  todays_date = calendar.datetime.date.today()
-  print(todays_date)
-
-# def month_only(m, y):
-
-
-date = input('Enter a Month and Year: ')
-print(empty_date())
+# Conditionals
+if len(sys.argv) == 1:
+  print(calendar.month(datetime.now().year, datetime.now().month))
+elif len(sys.argv) == 2:
+  print(calendar.month(datetime.now().year, int(sys.argv[1]))) 
+elif len(sys.argv) == 3:
+  print(calendar.month(int(sys.argv[2]), int(sys.argv[1])))
+else:
+  print('Invalid input, expected: python3 14_cal.py Month [Year]')
